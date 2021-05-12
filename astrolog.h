@@ -69,7 +69,7 @@
 //#define MACOLD /* Comment out this #define if you're not compiling for an  */
                /* old pre-OSX Mac. Modern Mac systems should not use this. */
 
-#define X11 /* Comment out this #define if you don't have X windows, or */
+//#define X11 /* Comment out this #define if you don't have X windows, or */
             /* else have them and don't wish to compile in X graphics.  */
 
 //#define WIN /* Comment out this #define if you don't have MS Windows, or */

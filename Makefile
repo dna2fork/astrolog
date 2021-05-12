@@ -30,9 +30,9 @@ X11LIB_ = -lX11
 X11DEF_ = -DX11
 endif
 LIBS = -lm $(X11LIB_) -ldl
-CPPFLAGS = -O -Wno-write-strings -Wno-narrowing -Wno-comment
+CPPFLAGS = $(X11DEF_) -O -Wno-write-strings -Wno-narrowing -Wno-comment
 
 astrolog:: $(OBJ)
-	cc -o $(NAME) $(X11DEF_) $(OBJ) $(LIBS)
+	cc -o $(NAME) $(OBJ) $(LIBS)
 	strip $(NAME)
 #
